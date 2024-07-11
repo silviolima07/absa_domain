@@ -146,7 +146,7 @@ instruction_zs = "Aspects are nouns in reviews and opinions are adjectives in re
 #                        is_trainable=False)                                     
 #model = parafrase_peft 
  
-repo_model = "SilvioLima/absa_10_domains"
+repo_model = "SilvioLima/absa_1_domain_lora_large"
 model_name_or_path = repo_model
 config = PeftConfig.from_pretrained(model_name_or_path)
 model = AutoModelForSeq2SeqLM.from_pretrained(config.base_model_name_or_path)
